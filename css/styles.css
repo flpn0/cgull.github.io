@@ -1,34 +1,63 @@
+/* Apply Poppins font to the entire page */
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    
-    background: url('../images/background.png') no-repeat center center fixed;
+    background: url('../images/background.png') no-repeat center center fixed; /* Match the background of the website */
     background-size: cover;
-    font-family: 'Helvetica';
-    color: white;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    color: rgb(255, 255, 255);
     display: flex;
+    background-color: rgb(100, 151, 117);
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-
-
 .content {
     padding: 20px;
+    text-align: center;
     border-radius: 10px;
 }
 
-.content p{
-    font-family: 'Helvetica';
-}    
-
-
 h1 {
     font-size: 3em;
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Social media buttons styled to be in a vertical stack */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+    border: none; /* Remove border */
+}
+
+/* Hover effect for the buttons */
+.social-button:hover {
+    color: rgb(129, 15, 15);
+    transform: scale(1.05);
+}
+
+/* Active state for buttons (when clicked) */
+.social-button:active {
+    transform: scale(0.95);
 }
