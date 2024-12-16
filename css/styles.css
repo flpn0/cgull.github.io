@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('../images/background.jpg') no-repeat center center fixed;
+    
+    background: url('../images/background.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica';
     color: white;
     display: flex;
     justify-content: center;
@@ -12,11 +13,17 @@ body {
     text-align: center;
 }
 
+
+
 .content {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for content */
     padding: 20px;
     border-radius: 10px;
 }
+
+.content p{
+    font-family: 'Helvetica';
+}    
+
 
 h1 {
     font-size: 3em;
